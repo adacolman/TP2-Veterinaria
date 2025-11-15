@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+.logo {
+  width: 70px;
+  height: auto;
+}
+
 
 body {
  background: #f8f9fa;
@@ -170,3 +175,4 @@ body {
 .footer-link:hover {
     text-decoration: underline;
 }
+
