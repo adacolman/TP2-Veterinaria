@@ -69,7 +69,9 @@
                 <a class="nav-link px-3" href="#productos">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3" href="#">Contacto</a>
+                <a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
+                  Contacto
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link px-3" href="#">Nosotros</a>
@@ -83,7 +85,7 @@
       <div
         id="banner"
         class="container hero-content d-flex align-items-center"
-        style="height: calc(100vh - 300px)"
+        style="height: calc(100vh - 250px)"
       >
         <div class="row align-items-center justify-content-center w-100">
           <div class="col-6">
@@ -104,6 +106,54 @@
         </div>
       </div>
     </header>
+
+    <!-- MODAL DE CONTACTO -->
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <form id="contactForm">
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Nombre</label>
+            <input type="text" class="form-control" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Email</label>
+            <input type="email" class="form-control" placeholder="tuemail@example.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Asunto</label>
+            <input type="text" class="form-control" placeholder="Motivo del mensaje" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Mensaje</label>
+            <textarea class="form-control" rows="4" placeholder="Escribí tu mensaje..." required></textarea>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button class="btn-custom">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
     <!-- SERVICIOS -->
     <section id="servicios" class="container">
@@ -213,33 +263,32 @@
           </div>
 
           <div class="col-lg-7">
-            <p class="fw-semibold mt-3">
+            <p class="fw-semibold mt-3 ms-5 fs-5">
               ¡Conocé a nuestro equipo de veterinarias expertas!
             </p>
 
-            <p>
+            <p class="w-75 ms-5">
               Contamos con un equipo de veterinarios expertos y compasivos,
               dedicados a brindar una atención excepcional a tus mascotas. Desde
               chequeos de rutina hasta tratamientos especializados, ¡programá tu
               cita hoy mismo!
             </p>
 
-            <button class="btn-custom mt-3">Reservá tu cita</button>
+            <button class="btn-custom mt-3 ms-5">Reservá tu cita</button>
           </div>
         </div>
       </section>
 
       <!-- ACCESORIOS -->
       <section id="productos" class="py-5">
-        <h2 class="fw-bold text-center mb-5">Accesorios para mascotas</h2>
-
         <div class="row align-items-center mt-3">
+          <h2 class="fw-bold text-center mb-5">Accesorios para mascotas</h2>
           <div class="col-lg-7 order-2 order-lg-1">
-            <h3 class="fw-bold mt-3">
+            <p class="fw-semibold mt-3 ms-5 fs-5">
               ¡Descubrí un mundo de accesorios para mascotas!
-            </h3>
+            </p>
 
-            <p>
+            <p class="w-75 ms-5">
               En nuestra tienda encontrarás una selección cuidadosamente curada
               de productos diseñados para mejorar la vida de tus compañeros
               peludos. Desde collares resistentes y modernos, juguetes
@@ -247,7 +296,7 @@
               pensando en calidad, durabilidad y seguridad.
             </p>
 
-            <button class="btn-custom mt-3">Comprá ahora</button>
+            <button class="btn-custom mt-3 ms-5">Comprá ahora</button>
           </div>
 
           <div class="col-lg-5 text-center order-1 order-lg-2">
@@ -282,7 +331,7 @@
                   Todo está muy bien organizado y la navegación es intuitiva. Me
                   sirvió para resolver varias dudas.
                 </p>
-                <div class="text-warning fs-1">★★★★★</div>
+                <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
               </div>
             </div>
 
@@ -304,7 +353,7 @@
                   gusta que actualicen regularmente y que ofrezcan recursos
                   confiables.
                 </p>
-                <div class="text-warning fs-1">★★★★★</div>
+                <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
               </div>
             </div>
 
@@ -322,7 +371,7 @@
                   Me gustó el diseño y la forma simple en la que explican cada
                   tema.
                 </p>
-                <div class="text-warning fs-1">★★★★★</div>
+                <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
               </div>
             </div>
           </div>
