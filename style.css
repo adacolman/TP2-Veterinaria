@@ -104,6 +104,12 @@ section {
   bottom: -240px;
 }
 
+.servicio-titulo {
+  font-size: 1.25rem; /* más grande que antes */
+  font-weight: 600;   /* un poco más importante visualmente */
+}
+
+
 .btn-custom {
   background: #7bb5ff;
   color: white;
@@ -117,6 +123,19 @@ section {
 .btn-custom:hover {
   background: #5a9ae0;
   transform: translateY(-3px);
+}
+.btn-banner {
+  background-color: #7494DF;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-banner:hover {
+  background-color: #5980db;
+  color: white;
 }
 
 .decorated-image-container {
@@ -170,6 +189,9 @@ section {
 
 .services-gap {
   gap: 10rem !important;
+}
+.servicio-card {
+  cursor: pointer;
 }
 
 .video-container {
