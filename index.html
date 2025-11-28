@@ -4,133 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Care</title>
+    <link rel="icon" href="img/logopp.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<!-- HEADER -->
-<header class="hero-section">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
-        <div class="container">
+    <!-- HEADER -->
+    <header class="hero-section">
 
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/huella.jpg" class="me-2" width="32">
-                <span class="fw-bold">Nombre</span>
-            </a>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent custom-navbar">
+            <div class="container">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link px-3 active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#">Veterinaria</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#">Sobre nosotros</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-
-    <!-- BANNER -->
-        <div class="container hero-content d-flex align-items-center" style="height: calc(100vh - 200px);">
-    <div class="row align-items-center justify-content-center w-100">
-
-            <div class="col-6">
-                <h1 class="hero-title">Cuidamos<br>lo que amas</h1>
-                <p class="hero-subtitle mt-4 mb-4">
-                    Todo lo que tu perro necesita para vivir mejor, en un solo lugar<br>
-                    y con la mejor atención.
-                </p>
-                <button class="btn btn-primary hero-btn">Conocer más</button>
-            </div>
-
-            <div class="col-6 d-flex justify-content-center hero-dog-container">
-                <img src="img/perro_-_1-removebg-preview.png" class="hero-dog" alt="dog">
-            </div>
-
-        </div>
-    </div>
-
-</header>
-
-<section class="container my-5">
-    <h2 class="text-center mb-4">All Pet Care Service</h2>
-
-    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-            <!-- SLIDE 1 -->
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center services-gap flex-wrap">
-
-                    <!-- Training -->
-                    <div class="text-center">
-                        <div class="decorated-image-container">
-                            <img src="img/entrenamiento.png" class="decorated-main-img" alt="Training">
-                        </div>
-                        <p class="mt-3">Training</p>
-                    </div>
-
-                    <!-- Sitting -->
-                    <div class="text-center">
-                        <div class="decorated-image-container">
-                            <img src="img/cuidado.png" class="decorated-main-img" alt="Sitting">
-                        </div>
-                        <p class="mt-3">Sitting</p>
-                    </div>
-
+                <!-- Logo -->
+                <div class="d-flex align-items-center">
+                    <img src="img/logopp.png" class="logo" alt="Dulce Huella">
+                    <img src="img/logo-texto.png" class="logo-texto" alt="Dulce Huella">
                 </div>
-            </div>
 
-            <!-- SLIDE 2 -->
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center services-gap flex-wrap">
+                <!-- Toggle Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <!-- Grooming -->
-                    <div class="text-center">
-                        <div class="decorated-image-container">
-                            <img src="img/entrenamiento.png" class="decorated-main-img" alt="Grooming">
-                        </div>
-                        <p class="mt-3">Grooming</p>
-                    </div>
-
-                    <!-- Walking -->
-                    <div class="text-center">
-                        <div class="decorated-image-container">
-                            <img src="img/cuidado.png" class="decorated-main-img" alt="Walking">
-                        </div>
-                        <p class="mt-3">Walking</p>
-                    </div>
-
+                <!-- Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item"><a class="nav-link px-3 active" href="#index">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#servicios">Veterinaria</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#">Nosotros</a></li>
+                    </ul>
                 </div>
-            </div>
 
+            </div>
+        </nav>
+
+        <!-- BANNER -->
+        <div id="banner" class="container hero-content d-flex align-items-center" style="height: calc(100vh - 300px);">
+            <div class="row align-items-center justify-content-center w-100">
+
+                <div class="col-6">
+                    <h1 class="hero-title">Cuidamos<br>lo que amas</h1>
+
+                    <p class="hero-subtitle mt-4 mb-3">
+                        Todo lo que tu perro necesita para vivir mejor, en un solo lugar<br>
+                        y con la mejor atención.
+                    </p>
+
+                    <button class="btn-custom mt-2">Conocer más</button>
+                </div>
+
+                <div class="col-6 d-flex justify-content-center hero-dog-container">
+                    <img src="img/perro_-_1-removebg-preview.png" class="hero-dog" alt="dog">
+                </div>
+
+            </div>
         </div>
 
-        <!-- Controles -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
+    </header>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-</section>
+    <!-- SERVICIOS -->
+    <section id="servicios" class="container">
+
+        <h2 class="text-center mb-5 fw-bold">Nuestros servicios</h2>
+
+        <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- INDICADORES -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+            </div>
+
+            <!-- SLIDES -->
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center services-gap flex-wrap">
+
+                        <div class="text-center">
+                            <div class="decorated-image-container">
+                                <img src="img/entrenamiento.png" class="decorated-main-img" alt="Training">
+                            </div>
+                            <p class="mt-3">Entrenamiento</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="decorated-image-container">
+                                <img src="img/cuidado.png" class="decorated-main-img" alt="Sitting">
+                            </div>
+                            <p class="mt-3">Cuidado</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center services-gap flex-wrap">
+
+                        <div class="text-center">
+                            <div class="decorated-image-container">
+                                <img src="img/entrenamiento.png" class="decorated-main-img" alt="Grooming">
+                            </div>
+                            <p class="mt-3">Grooming</p>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="decorated-image-container">
+                                <img src="img/cuidado.png" class="decorated-main-img" alt="Walking">
+                            </div>
+                            <p class="mt-3">Walking</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <div class="container">
+
         <!-- VETERINARIAS -->
         <section class="py-5">
+
             <div class="row align-items-center mb-5">
-                <h2 class="fw-bold text-center text-center">Veterinarias</h2>
+
+                <h2 class="fw-bold text-center mb-5">Veterinarias</h2>
+
                 <div class="col-lg-5 text-center">
                     <div class="decorated-image-container mx-auto">
                         <img src="img/veterinaria.png" class="decorated-main-img" alt="Veterinaria">
@@ -138,32 +150,36 @@
                 </div>
 
                 <div class="col-lg-7">
+
                     <p class="fw-semibold mt-3">¡Conocé a nuestro equipo de veterinarias expertas!</p>
 
                     <p>
-                        Contamos con un equipo de veterinarios expertos y compasivos, dedicados a brindar una atención
-                        excepcional a tus mascotas. Desde chequeos de rutina hasta tratamientos especializados,
-                        ¡programá tu cita hoy mismo!
+                        Contamos con un equipo de veterinarios expertos y compasivos, dedicados a brindar una atención excepcional
+                        a tus mascotas. Desde chequeos de rutina hasta tratamientos especializados, ¡programá tu cita hoy mismo!
                     </p>
 
                     <button class="btn-custom mt-3">Reservá tu cita</button>
+
                 </div>
 
             </div>
         </section>
 
-
         <!-- ACCESORIOS -->
-        <section class="py-5">
-            <div class="row align-items-center mt-5">
-                <h2 class="fw-bold text-center text-center">Accesorios para mascotas</h2>
+        <section id="productos" class="py-5">
+
+            <h2 class="fw-bold text-center mb-5">Accesorios para mascotas</h2>
+
+            <div class="row align-items-center mt-3">
 
                 <div class="col-lg-7 order-2 order-lg-1">
-                    <p class="fw-semibold mt-3">¡Descubrí un mundo de elegantes accesorios para mascotas!</p>
+
+                    <h3 class="fw-bold mt-3">¡Descubrí un mundo de accesorios para mascotas!</h3>
 
                     <p>
-                        Ofrecemos accesorios de alta calidad para tus mascotas. Desde collares a la moda, juguetes y artículos
-                        de aseo, tenemos todo lo que necesitás para consentirlos.
+                        En nuestra tienda encontrarás una selección cuidadosamente curada de productos diseñados para mejorar la vida
+                        de tus compañeros peludos. Desde collares resistentes y modernos, juguetes interactivos y artículos de higiene.
+                        Cada accesorio fue elegido pensando en calidad, durabilidad y seguridad. 
                     </p>
 
                     <button class="btn-custom mt-3">Comprá ahora</button>
@@ -176,11 +192,12 @@
                 </div>
 
             </div>
+
         </section>
 
-
         <!-- RESEÑAS -->
-        <section class="py-5">
+        <section id="review">
+
             <div class="text-center">
 
                 <h2 class="fw-bold mb-5">Reseñas de clientes</h2>
@@ -189,41 +206,49 @@
 
                     <!-- Card 1 -->
                     <div class="col-md-4">
-                        <div class="p-4 bg-white shadow rounded">
+                        <div class="p-4 bg-white shadow rounded d-flex flex-column align-items-center justify-content-center text-center h-100">
                             <img src="img/benjamingonzalez.jpeg" class="rounded-circle mb-3 review-img">
                             <h5 class="fw-semibold">Benjamin Gonzalez</h5>
-                            <p class="mt-2">The overall design of the website is visually appealing and user-friendly.</p>
-                            <div class="text-warning fs-5">★★★★★</div>
+                            <p class="mt-2">
+                                Todo está muy bien organizado y la navegación es intuitiva. Me sirvió para resolver varias dudas.
+                            </p>
+                            <div class="text-warning fs-1">★★★★★</div>
                         </div>
                     </div>
 
-                    <!-- Card 2 - Destacada -->
+                    <!-- Card 2 -->
                     <div class="col-md-4">
-                        <div class="p-4 shadow text-white rounded review-highlight">
+                        <div class="p-4 shadow text-white rounded review-highlight d-flex flex-column align-items-center justify-content-center text-center h-100">
                             <img src="img/carinacastro.jpg" class="rounded-circle mb-3 border border-3 border-white review-img">
                             <h5 class="fw-semibold">Carina Castro</h5>
-                            <p class="mt-2">The pawsome website is a valuable resource for pet owners. It offers plenty of guidance.</p>
-                            <div class="text-warning fs-5">★★★★★</div>
+                            <p class="mt-2">
+                                La experiencia general fue muy buena. El sitio se ve prolijo, ordenado y atractivo, pero lo mejor es la calidad de su contenido. Encontré guías completas que me ayudaron a entender mejor cómo cuidar a mi gato senior y adaptar su entorno. Me gusta que actualicen regularmente y que ofrezcan recursos confiables.
+                            </p>
+                            <div class="text-warning fs-1">★★★★★</div>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="col-md-4">
-                        <div class="p-4 bg-white shadow rounded">
+                        <div class="p-4 bg-white shadow rounded d-flex flex-column align-items-center justify-content-center text-center h-100">
                             <img src="img/nicolasfernandez.jpg" class="rounded-circle mb-3 review-img">
                             <h5 class="fw-semibold">Nicolas Fernandez</h5>
-                            <p class="mt-2">The website is well-organized and easy to navigate.</p>
-                            <div class="text-warning fs-5">★★★★★</div>
+                            <p class="mt-2">Me gustó el diseño y la forma simple en la que explican cada tema.</p>
+                            <div class="text-warning fs-1">★★★★★</div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
     </div>
 
-
     <!-- FOOTER -->
-    <footer class="footer-section mt-5 pt-5">
+    <footer class="footer-section mt-5 pt-1">
+
         <div class="container pb-4">
 
             <div class="row align-items-center text-center text-md-start">
@@ -238,16 +263,17 @@
                 </div>
 
                 <div class="col-md-4 text-center">
+
                     <div class="decorated-image-container-footer mx-auto">
                         <img src="img/perro-footer.png" class="decorated-main-img-footer" alt="Veterinaria">
                     </div>
-                    <h5 class="fw-bold mt-2">Nombre</h5>
 
-                    <div class="d-flex justify-content-center gap-3 mt-2">
-                        <i class="bi bi-instagram fs-4"></i>
-                        <i class="bi bi-facebook fs-4"></i>
-                        <i class="bi bi-twitter fs-4"></i>
+                    <div class="d-flex justify-content-center gap-4 mt-2">
+                        <a href=""><i class="bi bi-instagram fs-2"></i></a>
+                        <a href=""><i class="bi bi-facebook fs-2"></i></a>
+                        <a href=""><i class="bi bi-twitter fs-2"></i></a>
                     </div>
+
                 </div>
 
                 <div class="col-md-4">
@@ -262,6 +288,7 @@
             </div>
 
         </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
