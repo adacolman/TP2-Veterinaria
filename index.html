@@ -1,452 +1,270 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Care</title>
-    <link rel="icon" href="img/logopp.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Care</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <link rel="icon" href="img/logopp.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="hero-section">
-      <!-- NAVBAR -->
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-transparent custom-navbar"
-      >
-        <div class="container">
-          <!-- Logo -->
-          <div class="d-flex align-items-center">
-            <img src="img/logopp.png" class="logo" alt="Dulce Huella" />
-            <img
-              src="img/logo-texto.png"
-              class="logo-texto"
-              alt="Dulce Huella"
-            />
-          </div>
+<body>
 
-          <!-- Toggle Mobile -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Items -->
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav gap-2">
-              <li class="nav-item">
-                <a class="nav-link px-3 active" href="#index">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#servicios">Veterinaria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#productos">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
-                  Contacto
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3" href="#">Nosotros</a>
-              </li>
-            </ul>
-          </div>
+  <header class="hero-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent custom-navbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        
+        <div class="d-flex align-items-center">
+          <img src="img/logopp.png" class="logo" alt="Dulce Huella" />
+          <img src="img/logo-texto.png" class="logo-texto" alt="Dulce Huella" />
         </div>
-      </nav>
 
-      <!-- BANNER -->
-      <div
-        id="banner"
-        class="container hero-content d-flex align-items-center"
-        style="height: calc(100vh - 250px)"
-      >
-        <div class="row align-items-center justify-content-center w-100">
-          <div class="col-6">
-            <h1 class="hero-title">Cuidamos<br />lo que amas</h1>
+        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <p class="hero-subtitle mt-4 mb-3">
-              Todo lo que tu perro necesita para vivir mejor, en un solo
-              lugar<br />
-              y con la mejor atención.
-            </p>
-
-            <button class="btn-custom mt-2">Conocer más</button>
-          </div>
-
-          <div class="col-6 d-flex justify-content-center hero-dog-container">
-            <img src="img-perrito.png" class="hero-dog" alt="dog" />
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-2 text-center text-lg-start pt-3 pt-lg-0">
+            <li class="nav-item"><a class="nav-link px-3 active" href="#index">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#servicios">Veterinaria</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#">Nosotros</a></li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
 
-    <!-- MODAL DE CONTACTO -->
-<div class="modal fade" id="contactModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
+    <div id="banner" class="container hero-content d-block d-lg-flex align-items-center">
+      <div class="row align-items-center justify-content-center w-100 gy-4">
+        
+        <div class="col-12 col-lg-6 text-center text-lg-start pt-5 pt-lg-0">
+          <h1 class="hero-title">Cuidamos<br />lo que amas</h1>
+          <p class="hero-subtitle mt-3 mb-3">
+            Todo lo que tu perro necesita para vivir mejor, en un solo lugar y con la mejor atención.
+          </p>
+          <button class="btn-custom mt-2">Conocer más</button>
+        </div>
 
-      <!-- Header -->
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold">Contacto</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="col-lg-6 d-none d-lg-flex justify-content-center hero-dog-container">
+          <img src="img-perrito.png" class="hero-dog" alt="dog" />
+        </div>
+
       </div>
-
-      <!-- Body -->
-      <div class="modal-body">
-        <form id="contactForm">
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Nombre</label>
-            <input type="text" class="form-control" placeholder="Tu nombre" required>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Email</label>
-            <input type="email" class="form-control" placeholder="tuemail@example.com" required>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Asunto</label>
-            <input type="text" class="form-control" placeholder="Motivo del mensaje" required>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-semibold">Mensaje</label>
-            <textarea class="form-control" rows="4" placeholder="Escribí tu mensaje..." required></textarea>
-          </div>
-
-        </form>
-      </div>
-
-      <!-- Footer -->
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button class="btn-custom">Enviar</button>
-      </div>
-
     </div>
-  </div>
-</div>
+  </header>
 
-    <!-- SERVICIOS -->
-<section id="servicios" class="container">
-  <h2 class="text-center mb-5 fw-bold">Nuestros servicios</h2>
-
-  <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- INDICADORES -->
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#servicesCarousel"
-        data-bs-slide-to="0"
-        class="active"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#servicesCarousel"
-        data-bs-slide-to="1"
-      ></button>
-    </div>
-
-    <!-- SLIDES -->
-    <div class="carousel-inner">
-      <!-- SLIDE 1 -->
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center services-gap flex-wrap">
-          <!-- CARD ENTRENAMIENTO (abre el video) -->
-          <div
-            class="text-center servicio-card"
-            data-bs-toggle="modal"
-            data-bs-target="#videoEntrenamientoModal"
-          >
-            <div class="decorated-image-container">
-              <img
-                src="img/entrenamiento.png"
-                class="decorated-main-img"
-                alt="Training"
-              />
-            </div>
-            <p class="mt-3">Entrenamiento</p>
-          </div>
-
-          <!-- CARD CUIDADO -->
-          <div class="text-center">
-            <div class="decorated-image-container">
-              <img
-                src="img/cuidado.png"
-                class="decorated-main-img"
-                alt="Sitting"
-              />
-            </div>
-            <p class="mt-3">Cuidado</p>
-          </div>
+  <div class="modal fade" id="contactModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-      </div>
-
-      <!-- SLIDE 2 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center services-gap flex-wrap">
-          <div class="text-center">
-            <div class="decorated-image-container">
-              <img
-                src="img/entrenamiento.png"
-                class="decorated-main-img"
-                alt="Grooming"
-              />
+        <div class="modal-body">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Nombre</label>
+              <input type="text" class="form-control" placeholder="Tu nombre" required />
             </div>
-            <p class="mt-3">Grooming</p>
-          </div>
-
-          <div class="text-center">
-            <div class="decorated-image-container">
-              <img
-                src="img/cuidado.png"
-                class="decorated-main-img"
-                alt="Walking"
-              />
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control" placeholder="tuemail@example.com" required />
             </div>
-            <p class="mt-3">Walking</p>
-          </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Asunto</label>
+              <input type="text" class="form-control" placeholder="Motivo del mensaje" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Mensaje</label>
+              <textarea class="form-control" rows="4" placeholder="Escribí tu mensaje..." required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button class="btn-custom">Enviar</button>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-      <!-- VETERINARIAS -->
-      <section class="py-5">
-        <div class="row align-items-center mb-5">
-          <h2 class="fw-bold text-center mb-5">Veterinarias</h2>
-
-          <div class="col-lg-5 text-center">
-            <div class="decorated-image-container mx-auto">
-              <img
-                src="img/veterinaria.png"
-                class="decorated-main-img"
-                alt="Veterinaria"
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <p class="fw-semibold mt-3 ms-5 fs-5">
-              ¡Conocé a nuestro equipo de veterinarias expertas!
-            </p>
-
-            <p class="w-75 ms-5">
-              Contamos con un equipo de veterinarios expertos y compasivos,
-              dedicados a brindar una atención excepcional a tus mascotas. Desde
-              chequeos de rutina hasta tratamientos especializados, ¡programá tu
-              cita hoy mismo!
-            </p>
-
-            <button class="btn-custom mt-3 ms-5">Reservá tu cita</button>
-          </div>
+  <section id="servicios" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold">Nuestros servicios</h2>
+  
+    <div class="d-flex justify-content-center gap flex-wrap pb-5">
+  
+      <div class="text-center servicio-card" data-bs-toggle="modal" data-bs-target="#videoEntrenamientoModal">
+        <div class="decorated-image-container mb-4">
+          <img src="img/entrenamiento.png" class="decorated-main-img" alt="Adiestramiento" />
         </div>
-      </section>
-
-      <!-- ACCESORIOS -->
-      <section id="productos" class="py-5">
-        <div class="row align-items-center mt-3">
-          <h2 class="fw-bold text-center mb-5">Accesorios para mascotas</h2>
-          <div class="col-lg-7 order-2 order-lg-1">
-            <p class="fw-semibold mt-3 ms-5 fs-5">
-              ¡Descubrí un mundo de accesorios para mascotas!
-            </p>
-
-            <p class="w-75 ms-5">
-              En nuestra tienda encontrarás una selección cuidadosamente curada
-              de productos diseñados para mejorar la vida de tus compañeros
-              peludos. Desde collares resistentes y modernos, juguetes
-              interactivos y artículos de higiene. Cada accesorio fue elegido
-              pensando en calidad, durabilidad y seguridad.
-            </p>
-
-            <button class="btn-custom mt-3 ms-5">Comprá ahora</button>
-          </div>
-
-          <div class="col-lg-5 text-center order-1 order-lg-2">
-            <div class="decorated-image-container mx-auto">
-              <img
-                src="img/accesorios.png"
-                class="decorated-main-img"
-                alt="Veterinaria"
-              />
-            </div>
-          </div>
+        <p class="mt-3 fs-4 fw-semibold">Adiestramiento</p>
+        <button class="btn-custom">Ver más</button>
+      </div>
+  
+      <div class="text-center servicio-card" data-bs-toggle="modal" data-bs-target="#videoPaseoModal">
+        <div class="decorated-image-container mb-4">
+          <img src="img/cuidado.png" class="decorated-main-img" alt="Cuidado" />
         </div>
-      </section>
-
-      <!-- RESEÑAS -->
-      <section id="review">
-        <div class="text-center">
-          <h2 class="fw-bold mb-5">Reseñas de clientes</h2>
-
-          <div class="row justify-content-center align-items-center g-4">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-              <div
-                class="p-4 bg-white shadow rounded d-flex flex-column align-items-center justify-content-center text-center h-100"
-              >
-                <img
-                  src="img/benjamingonzalez.jpeg"
-                  class="rounded-circle mb-3 review-img"
-                />
-                <h5 class="fw-semibold">Benjamin Gonzalez</h5>
-                <p class="mt-2">
-                  Todo está muy bien organizado y la navegación es intuitiva. Me
-                  sirvió para resolver varias dudas.
-                </p>
-                <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-4">
-              <div
-                class="p-4 shadow text-white rounded review-highlight d-flex flex-column align-items-center justify-content-center text-center h-100"
-              >
-                <img
-                  src="img/carinacastro.jpg"
-                  class="rounded-circle mb-3 border border-3 border-white review-img"
-                />
-                <h5 class="fw-semibold">Carina Castro</h5>
-                <p class="mt-2">
-                  La experiencia general fue muy buena. El sitio se ve prolijo,
-                  ordenado y atractivo, pero lo mejor es la calidad de su
-                  contenido. Encontré guías completas que me ayudaron a entender
-                  mejor cómo cuidar a mi gato senior y adaptar su entorno. Me
-                  gusta que actualicen regularmente y que ofrezcan recursos
-                  confiables.
-                </p>
-                <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-4">
-              <div
-                class="p-4 bg-white shadow rounded d-flex flex-column align-items-center justify-content-center text-center h-100"
-              >
-                <img
-                  src="img/nicolasfernandez.jpg"
-                  class="rounded-circle mb-3 review-img"
-                />
-                <h5 class="fw-semibold">Nicolas Fernandez</h5>
-                <p class="mt-2">
-                  Me gustó el diseño y la forma simple en la que explican cada
-                  tema.
-                </p>
-                <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <p class="mt-3 fs-4 fw-semibold">Cuidado</p>
+        <button class="btn-custom">Ver más</button>
+      </div>
+  
     </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer-section mt-5 pt-1">
-      <div class="container pb-4">
-        <div class="row align-items-center text-center text-md-start">
-          <div class="col-md-4">
-            <ul class="list-unstyled">
-              <li><a href="#" class="footer-link">Contacto</a></li>
-              <li><a href="#" class="footer-link">Sobre nosotros</a></li>
-              <li><a href="#" class="footer-link">Centro de ayuda</a></li>
-              <li><a href="#" class="footer-link">FAQs</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <div class="decorated-image-container-footer mx-auto">
-              <img
-                src="img/perro-footer.png"
-                class="decorated-main-img-footer"
-                alt="Veterinaria"
-              />
-            </div>
-
-            <div class="d-flex justify-content-center gap-4 mt-2">
-              <a href=""><i class="bi bi-instagram fs-2"></i></a>
-              <a href=""><i class="bi bi-facebook fs-2"></i></a>
-              <a href=""><i class="bi bi-twitter fs-2"></i></a>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <ul class="list-unstyled text-md-end text-center">
-              <li><a href="#" class="footer-link">Day Care</a></li>
-              <li>
-                <a href="#" class="footer-link">Términos y condiciones</a>
-              </li>
-              <li><a href="#" class="footer-link">Productos populares</a></li>
-              <li><a href="#" class="footer-link">Blog</a></li>
-            </ul>
-          </div>
+  <section class="py-3 py-lg-5 container">
+    <h2 class="fw-bold text-center mb-5">Veterinarias</h2>
+    <div class="row align-items-center mb-5 gy-5">
+      <div class="col-12 col-lg-5 text-center">
+        <div class="decorated-image-container mx-auto">
+          <img src="img/veterinaria.png" class="decorated-main-img" alt="Veterinaria" />
         </div>
       </div>
-    </footer>
-<!-- MODAL VIDEO ENTRENAMIENTO -->
-<div
-  class="modal fade"
-  id="videoEntrenamientoModal"
-  tabindex="-1"
-  aria-labelledby="videoEntrenamientoLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content border-0">
-      <div class="modal-header border-0">
-        <h5 class="modal-title" id="videoEntrenamientoLabel">
-          Entrenamiento con su dueño
-        </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Cerrar"
-        ></button>
+
+      <div class="col-12 col-lg-7 text-center text-lg-start">
+        <p class="fw-semibold mt-3 ms-lg-5 fs-5">¡Conocé a nuestro equipo de expertas!</p>
+        <p class="w-75 w-lg-75 ms-lg-5">
+          Contamos con un equipo de veterinarios expertos y compasivos, dedicados a brindar una atención excepcional.
+        </p>
+        <button class="btn-custom mt-3 ms-lg-5">Reservá tu cita</button>
       </div>
-      <div class="modal-body">
-        <video class="video-perrito" controls>
-          <source src="video/video-perrito.mp4" type="video/mp4" />
-          Tu navegador no soporta el elemento de video.
-        </video>
+    </div>
+  </section>
+
+  <section id="productos" class="py-3 py-lg-5 container">
+    <h2 class="fw-bold text-center mb-5">Accesorios</h2>
+    <div class="row align-items-center mt-3 gy-5">
+
+      <div class="col-12 col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+        <p class="fw-semibold mt-3 ms-lg-5 fs-5">¡Descubrí un mundo de accesorios!</p>
+        <p class="w-75 w-lg-75 ms-lg-5">
+          En nuestra tienda encontrarás una selección cuidadosamente curada de productos. Collares, juguetes y artículos de higiene.
+        </p>
+        <button class="btn-custom mt-3 ms-lg-5">Comprá ahora</button>
+      </div>
+
+      <div class="col-12 col-lg-5 text-center order-1 order-lg-2">
+        <div class="decorated-image-container mx-auto">
+          <img src="img/accesorios.png" class="decorated-main-img" alt="Accesorios" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="review" class="container py-5">
+    <div class="text-center">
+      <h2 class="fw-bold mb-5">Reseñas de clientes</h2>
+      <div class="row justify-content-center align-items-center g-4">
+        
+        <div class="col-12 col-md-4">
+          <div class="p-4 bg-white shadow rounded d-flex flex-column align-items-center justify-content-center text-center h-100">
+            <img src="img/benjamingonzalez.jpeg" class="rounded-circle mb-3 review-img" />
+            <h5 class="fw-semibold">Benjamin Gonzalez</h5>
+            <p class="mt-2">Todo está muy bien organizado y la navegación es intuitiva.</p>
+            <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="p-4 shadow text-white rounded review-highlight d-flex flex-column align-items-center justify-content-center text-center h-100">
+            <img src="img/carinacastro.jpg" class="rounded-circle mb-3 border border-3 border-white review-img" />
+            <h5 class="fw-semibold">Carina Castro</h5>
+            <p class="mt-2">La experiencia general fue muy buena. El sitio se ve prolijo y ordenado.</p>
+            <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="p-4 bg-white shadow rounded d-flex flex-column align-items-center justify-content-center text-center h-100">
+            <img src="img/nicolasfernandez.jpg" class="rounded-circle mb-3 review-img" />
+            <h5 class="fw-semibold">Nicolas Fernandez</h5>
+            <p class="mt-2">Me gustó el diseño y la forma simple en la que explican cada tema.</p>
+            <div class="text-warning text-opacity-75 fs-1">★★★★★</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section mt-5 pt-4">
+    <div class="container pb-4">
+      <div class="row align-items-center text-center text-md-start gy-4">
+
+        <div class="col-12 col-md-4 order-2 order-md-1">
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="footer-link">Contacto</a></li>
+            <li><a href="#" class="footer-link">Sobre nosotros</a></li>
+            <li><a href="#" class="footer-link">Centro de ayuda</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4 text-center order-1 order-md-2">
+          <div class="decorated-image-container-footer mx-auto">
+            <img src="img/perro-footer.png" class="decorated-main-img-footer" alt="Footer Dog" />
+          </div>
+          <div class="d-flex justify-content-center gap-4 mt-3 mb-2">
+            <a href=""><i class="bi bi-instagram fs-2"></i></a>
+            <a href=""><i class="bi bi-facebook fs-2"></i></a>
+            <a href=""><i class="bi bi-twitter fs-2"></i></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 order-3 order-md-3">
+          <ul class="list-unstyled text-md-end text-center d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="footer-link">Day Care</a></li>
+            <li><a href="#" class="footer-link">Términos y condiciones</a></li>
+            <li><a href="#" class="footer-link">Productos populares</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="videoEntrenamientoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Entrenamiento con uno de nuestros profesionales</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <video class="video-perrito" controls>
+            <source src="video/video-perrito.mp4" type="video/mp4" />
+            Tu navegador no soporta video.
+          </video>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="modal fade" id="videoPaseoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold">Paseo de mascotas con nuestros profesionales</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <video class="video-perrito" controls>
+            <source src="video/Video_de_Paseador_de_Perros.mp4" type="video/mp4" />
+            Tu navegador no soporta video.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
