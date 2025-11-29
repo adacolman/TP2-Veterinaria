@@ -51,11 +51,6 @@ img {
   border-radius: 5px;
 }
 
-.nav-link:hover::after {
-  width: 100%;
-  transition: width 0.3s ease;
-}
-
 .hero-section {
   width: 100%;
   min-height: 100vh;
@@ -244,7 +239,51 @@ img {
   transform: rotate(30deg);
 }
 
+@media (min-width: 992px) {
+  
+  .decorated-main-img,
+  .decorated-image-container::after,
+  .decorated-main-img-footer,
+  .decorated-image-container-footer::after,
+  .nav-link::after,
+  .btn-custom {
+    transition: all 0.35s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .btn-custom:hover {
+    transform: translateY(-3px);
+  }
+
+  .decorated-image-container:hover .decorated-main-img {
+    transform: translateY(-8px) scale(1.08);
+  }
+
+  .decorated-image-container:hover::after {
+    transform: rotate(16deg);
+  }
+  
+  .decorated-image-container-footer:hover .decorated-main-img-footer {
+     transform: rotate(30deg) scale(1.1);
+  }
+  
+  .decorated-image-container-footer:hover::after {
+     transform: rotate(90deg);
+  }
+  
+  .servicio-card {
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 991px) {
+
+  #banner .row {
+    width: auto !important;
+  }
 
   .logo {
     min-width: 40px;
@@ -308,11 +347,9 @@ img {
 }
 
 @media (max-width: 576px) {
-
   .hero-title { 
     font-size: 2.2rem; 
   }
-
   .container { 
     padding-left: 20px; 
     padding-right: 20px; 
